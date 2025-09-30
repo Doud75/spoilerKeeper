@@ -1,8 +1,8 @@
+
 function hideSpoilers(enabled) {
   const selectorsToHide = [
-    '.imso_mt__t-sc .imso_mt__tt-w',
-    '.imso_mt__triangle',
-
+    '.imspo_mt__t-sc .imspo_mt__tt-w',
+    '.imspo_mt__triangle',
     '.imso_mh__l-tm-sc',
     '.imso_mh__r-tm-sc',
     '.imso_mh__sep'
