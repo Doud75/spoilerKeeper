@@ -2,15 +2,33 @@
   "manifest_version": 3,
   "name": "Anti-Spoil Sport",
   "version": "1.0",
-  "description": "Masque les scores sportifs sur les pages web.",
+  "description": "Masque les scores sportifs sur les résultats google.",
   "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "*://*.google.com/search*",
+        "*://*.google.fr/search*",
+        "*://*.google.be/search*",
+        "*://*.google.ca/search*",
+        "*://*.google.ch/search*"
+      ],
       "js": ["content.js"]
     }
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
